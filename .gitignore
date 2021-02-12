@@ -1,0 +1,19 @@
+bin/
+build/
+.metadata
+*.class
+
+# ignore all files ending with ~
+*~ 
+#IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea
+
+#Eclipse
+.classpath
+.project
+.settings/
+*/.gradle/
+
