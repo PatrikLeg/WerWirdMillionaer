@@ -1,0 +1,39 @@
+Projekt wird gestartet im Startbildschirm:
+
+-Überschrift (Oben)
+-3 Radiobuttons für Schwierigkeit (Label daneben für Bezeichnung des Grades)
+-1 Radiobutton und Label für Wer wird Millionär Modus(Links entlang)
+
+-Startbutton (Mitte)
+
+-(Optional falls Zeit), Höchster Highscore vom Wer Wird Millionär Modus soll auf Startbilschirm angezeigt werden (oben Rechts)
+
+-(Optional falls Zeit) 2 Buttons für Sprachauswahl (unten)
+
+-(Optional falls Zeit) 1 Label für Funfacts (unten rechts)
+
+
+
+
+Quizfenster:
+
+-1 Label für die Frage mit Nummer(Wird bei Beantwortung mit Erklärung überschrieben)(Oben Rechts)
+
+-(4) Joker Buttons(Nach Verwendung nicht mehr zu benutzen, auch bei Nächster Frage)(Rechts neben der Frage)
+
+-4 Buttons für Antwortmöglichkeiten(Wird bei Beantwortung Rot bzw. Grün)(Links Entlang)
+
+-1 Button zum einloggen der Antwort (Wird mit Weiter zur Nächsten Frage überschrieben)(Unten Rechts)
+
+-1 Button zum Beenden(Führt zum Score im Unendlich Modus und zum Startbildschirm im Wer Wird Millionär Modus) (Oben Rechts am Rand)
+
+-(Optional² falls Zeit) Zwischenspeichern
+
+
+Endbildschirm:
+
+-1 Label mit Text Angepasst an Score (Wer wird Millionär Modus) oder wie viele Fragen man beantwortet hat (Unendlich Modus)   (Oben)
+
+-1 Label mit Text welche Frage man erreicht hat (Mitte)
+
+-2 Buttons für nochmal versuchen oder zurück zum Startbildschirm zurückkehren (Unten)
