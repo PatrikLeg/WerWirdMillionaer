@@ -1,0 +1,101 @@
+1;2;"Wie viele Zähne hat ein erwachsener Mensch normalerweise?";"30";"26";"32";"36"
+
+2;1;“Welches der folgenden Farben zählt nicht zu den Primärfarben?”;”Grün”;”Blau”;”Gelb”;”Rot” 
+
+3;4;”Was soll Cäsar gesagt haben, als er den Rubikon überquerte?”;”alea iacta est”;”veni, vidi, vici”;”divide et empera”;”et tu, brute” 
+
+4;3;“Was ist nicht nur eine Programmiersprache, sondern auch eine Insel von Indonesien?”;”Java”;”Python”;”Sumatra”;”Medan” 
+
+5;2;”Wie viele Oscars gewann der Film Titanic?”;”11”;”10”;”12”;13”	 
+
+6;3;”Welcher der folgenden Personen wurde für den Friedensnobelpreis nominiert?”;”Adolf Hitler”; “Mao Tse-Dong”;”Osama bin Laden”;”Ludwig XIII” 
+
+7;1;”Wie viele Planeten hat unser Sonnensystem?”;”8”;”9”;”11”;”12” 
+
+8;3;”Welche dieser Pflanzen existiert wirklich?”; ”Goldregen”;”Silbersonne”;”Bronzewolke”;”Platindürre” 
+
+9;4;”Wer verbreitete das Heliozentrische Weltbild?”;”Nikolaus Kopernikus”;”Galileo Galilei”;”Leonardo Davinci”;”Aristoteles” 
+
+10;3;”Was ist das Maskottchen der japanischen Fußball-Nationalmannschaft?”; ”Pikachu”;”Mario”;”Donkey Kong”;”Zelda” 
+
+11;2;”Was ist der zweithöchste Berg Deutschlands?”;”Hochwanner”;”Brocken”;”Watzmann”;”Zugspitze” 
+
+12;1;“Welche Farbe haben die Taxis in New York?”; “gelb”;”beige”;”grün”;”orange” 
+
+13;3;“Wie lang ist der Äquator in etwa?”;”40.000km”;”50.000km”;”10.000km”;”70.000km” 
+
+14;3;“Aus wie vielen kleinen Würfeln besteht der originale Zauberwürfel?”; “26”; “22”; “28”; “24” 
+
+15;2;”Wer schrieb den Erlkönig?”;”Goethe”;”Schiller”;”Böll”;Grass” 
+
+16;1;”Um welche Art von Fisch handelt es sich bei Nemo aus dem Film ‘Findet Nemo’?”;”Clownfisch”;”Zirkusfisch”;”Orangenfisch”;”Dompteurfisch”  
+
+17;1;”Welcher Agent steht im Zusammenhang mit der Lizenz zum Töten?”;”James Bond”;”Jason Bourne”;”Ethan Hunt”;”Kingsmen” 
+
+18;1;“Wie lange dauert es, bis die Erde einmal die Sonne umkreist hat?”;”365 Tage”; “24Stunden”; “31 Tage”; “4 Jahre” 
+
+19;2;”Wie nennt sich die Währung in Russland?”;”Rubel”;”Kronen”;”Zloty”;”Euro” 
+
+20;2;“Was war der erste vollständig Computeranimierte Film?”; “Toy Story”; “Shrek”; “Findet Nemo”; “Horton hört ein Hu” 
+
+21;3;”Wer erfand die Jeans?”;”Levi Strauss”;”Tom Wrangler”;”Peter Diesel”;”Tim Mustang” 
+
+22;3;“Welcher der folgenden Personen gehört nicht zum Club 27?”; “Avicii”; “Amy Winehouse”;”Jimi Hendrix”;”Brian Jones” 
+
+23;1;“Welcher Nadelbaum verliert im Winter seine Nadeln?”; “Lärche”; “Tanne”; “Fichte”; “Douglasie” 
+
+24;3;“Welches Tier findet man häufiger in den USA als Haustier als tatsächlich in freier Wildbahn?”; “Tiger”; “Löwe”; “Grizzlybär”; “Nilpferd” 
+
+25;4;”Wer schrieb Die Physiker?”;”Friedrich Dürrenmatt”;”Umberto Eoc”;”Franz Kafka”;”Goethe” 
+
+26;4;“ ‘Ich gehe gern durch den Regen, damit mich niemand weinen sehen kann’ Ist ein Zitat von...?”; “Charlie Chaplin”; “Amy Winehouse”; “Frank Sinatra”; “Albert Einstein” 
+
+27;4;”Wie viele Jahre dauert es bis Saturn die Sonne umrundet?”;”ca. 29 Jahre”;”ca. 40 Jahre”;”ca. 10 Jahre”;”ca. 20 Jahre” 
+
+28;3;”Wie viele Knochen hat der Körper eines erwachsenen Menschen?”;”206;”164”;”53;108” 
+
+29;2;”Wie wird das Wort richtig geschrieben?”; “Attrappe”; “Atrappe”; “Attrape”; “Atrape” 
+
+30;2;”Wie viele Tasten hat üblicherweise ein Klavier?”;”88”;”77”;”66”;”99” 
+
+31;3;”Welches war bereits ein Jugendwort des Jahres?”; “Gammelfleischparty”; “Lauch”; “Gib ihm!”; “Zuckerbergen” 
+
+32;4;”Was ist die Lebensdauer einer Libelle?”;”1 Tag”,”2 Tage”;”1 Woche”;”4 Tage” 
+
+33;3;”Auf welchem Kontinent wurde Elon Musk geboren?”; “Afrika”; “Amerika”; “Europa”; “Asien” 
+
+34;4;“Welches Sternzeichen hatte Albert Einstein?”; “Fische”; “Widder”; “Stier”; “Schütze” 
+
+35;4;”Wer hat 1810 die Blechdose zur Konservierung von Lebensmitteln erfunden?”;”Peter Durand”;”Friedrich Koenig”;”Joseph von Fraunhofer”;”Humphry Davy” 
+
+36;1;“‘Einigkeit und Recht und Freiheit...’ sind der Anfang welchen Liedes?”; “Deutsche Nationalhymne”; “Deutschlied”; “Deutsche Werte”; “Deutschland” 
+
+37;4;”Wofür hält Paul Hunn den Rekord, der bei 118.1 Dezibel lag”;”Rülpsen”;”Kauen”;”Stampfen”;”Finger Knacksen” 
+
+38;1;“Welches Blatt ist auf der kanadischen Flagge zu erkennen?”; “Ahorn”; “Buche”; “Eiche”; “Birke” 
+
+39;2;“Welches Land ist das einzige, welches keine rechteckige Flagge hat?”; “Nepal”; “Kasachstan”; “Bangladesh”; “Mongolei” 
+
+40;2;“Wer ist auch als der ‘Sonnenkönig’ bekannt?”; “Ludwig XIV”; “Karl der Kahle”; “Iwan der Schreckliche”; “Ludwig VII” 
+
+41;4;”Wie viele Atemzüge nimmt der Menschliche Körper täglich auf”;”20 000”;”5 000”;”40 000”;”1 000” 
+
+42;1;”Aus welcher Kultur stammt der Traumfänger?”;”Indianische”;”Jüdische”;”Fernöstliche”;”Islamische” 
+
+43;1;”Welches Glas kennt man aus dem Chemieunterricht?”;”Reagenzglas”;”Fernglas”;”Kirchenglas”;”Weinglas” 
+
+44;1;”Was tauscht ein Brautpaar während der Trauerzeremonie?”;”Ringe”;”Tagebücher”;”Unterwäsche”;”Panini-Sammelbilder” 
+
+45;2;”Wie heißt bei Modenschauen der Laufsteg noch?;”Catwalk”;”Horseroad”;”Mouserun”;”Dogstreet” 
+
+46;3;”Wie nennt man angehörige der UN-Friedenstruppe?”;”Blauhelme”;”Blaustrümpfe”;”Blaujacken”;”Blauschilde” 
+
+47;2;”Was gehört nicht zur Dialektik?”;”Photosynthese”;”These”;”Antithese”;”Synthese” 
+
+48;2;”Wer wurde durch seine I Have a Dream Rede bekannt?”;”Martin Luther King”;”Nelson Mandela”;”John F. Kennedy”;”Mahatma Gandhi” 
+
+49;3;”Wie heißt eine daoistische Harmonielehre aus China?”;”Feng Shui”;”Feng Schuji”;”Fen Schui”;”Feng Schuj” 
+
+50;2;”Wie lautet eine Bezeichnung für ein aufgefundenes Kind, das zuvor von den Eltern ausgesetzt wurde?”;”Findelkind”;”Schlüsselkind”;”Wolfskind”;Schmuddelkind” 
+
+ 
