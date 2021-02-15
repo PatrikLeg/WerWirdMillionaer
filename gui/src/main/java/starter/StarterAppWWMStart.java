@@ -23,7 +23,7 @@ public class StarterAppWWMStart extends Application {
         URL res = getClass().getResource("/WWM/WWMStart.fxml");
         Parent root = FXMLLoader.load(res);
         primaryStage.setTitle("WWMStart");
-        primaryStage.setScene(new Scene(root, 400, 300));
+        primaryStage.setScene(new Scene(root, 1000, 666));
 
         primaryStage.show();
 

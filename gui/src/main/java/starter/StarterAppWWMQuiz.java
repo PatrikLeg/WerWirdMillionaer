@@ -23,7 +23,7 @@ public class StarterAppWWMQuiz extends Application {
         URL res = getClass().getResource("/WWM/WWMQuiz.fxml");
         Parent root = FXMLLoader.load(res);
         primaryStage.setTitle("WWMQuiz");
-        primaryStage.setScene(new Scene(root, 400, 300));
+        primaryStage.setScene(new Scene(root, 1000, 666));
 
         primaryStage.show();
 

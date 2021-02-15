@@ -8,44 +8,41 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #302E93;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WWMQuizController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="1000.0" style="-fx-background-color: #302E93;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WWMQuizController">
    <children>
-      <Button fx:id="bAntwortA" alignment="CENTER" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="160.0" prefWidth="576.0" style="-fx-background-color: #31539F;" text="Antwort A" textAlignment="CENTER" textFill="#e4dede">
+      <Button fx:id="bAntwortA" alignment="CENTER" layoutX="14.0" layoutY="31.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort A" textAlignment="CENTER" textFill="#e4dede">
          <font>
             <Font size="25.0" />
          </font>
       </Button>
-      <Button fx:id="bAntwortB" alignment="CENTER" layoutX="14.0" layoutY="205.0" mnemonicParsing="false" prefHeight="160.0" prefWidth="576.0" style="-fx-background-color: #31539F;" text="Antwort B" textAlignment="CENTER" textFill="#e4dede">
+      <Button fx:id="bAntwortB" alignment="CENTER" layoutX="14.0" layoutY="186.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort B" textAlignment="CENTER" textFill="#e4dede">
          <font>
             <Font size="25.0" />
          </font>
       </Button>
-      <Button fx:id="bAntwortC" alignment="CENTER" layoutX="14.0" layoutY="400.0" mnemonicParsing="false" prefHeight="160.0" prefWidth="576.0" style="-fx-background-color: #31539F;" text="Antwort C" textAlignment="CENTER" textFill="#e4dede">
+      <Button fx:id="bAntwortC" alignment="CENTER" layoutX="14.0" layoutY="344.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort C" textAlignment="CENTER" textFill="#e4dede">
          <font>
             <Font size="25.0" />
          </font>
       </Button>
-      <Button fx:id="bAntwortD" alignment="CENTER" layoutX="14.0" layoutY="594.0" mnemonicParsing="false" prefHeight="160.0" prefWidth="576.0" style="-fx-background-color: #31539F;" text="Antwort D" textFill="#e4dede">
+      <Button fx:id="bAntwortD" alignment="CENTER" layoutX="14.0" layoutY="502.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort D" textFill="#e4dede">
          <font>
             <Font size="25.0" />
          </font>
       </Button>
-      <Label fx:id="lQundA" alignment="TOP_LEFT" layoutX="606.0" layoutY="110.0" prefHeight="252.0" prefWidth="576.0" text="Frage" textFill="#f8f6f6">
+      <Label fx:id="lQundA" alignment="TOP_LEFT" layoutX="536.0" layoutY="101.0" prefHeight="235.0" prefWidth="444.0" text="Frage" textFill="#f8f6f6">
          <font>
             <Font name="Arial" size="25.0" />
          </font>
       </Label>
-      <Button fx:id="bBeenden" layoutX="1033.0" layoutY="25.0" mnemonicParsing="false" onAction="#Beende" prefHeight="48.0" prefWidth="143.0" style="-fx-background-color: #31539F;" text="Beenden" textFill="#f8f7f7">
+      <Button fx:id="bBeenden" layoutX="823.0" layoutY="31.0" mnemonicParsing="false" onAction="#Beende" prefHeight="48.0" prefWidth="143.0" style="-fx-background-color: #31539F;" text="Beenden" textFill="#f8f7f7">
          <font>
             <Font name="Arial" size="25.0" />
          </font>
       </Button>
-      <ImageView fx:id="bJoker1" fitHeight="82.0" fitWidth="106.0" layoutX="600.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="bJoker2" fitHeight="82.0" fitWidth="106.0" layoutX="765.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="bJoker3" fitHeight="82.0" fitWidth="106.0" layoutX="888.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
-      <Button fx:id="bWeiter" layoutX="620.0" layoutY="399.0" mnemonicParsing="false" onAction="#Weiter" prefHeight="354.0" prefWidth="531.0" style="-fx-background-color: #559ACA;" text="Antwort Einloggen" textAlignment="CENTER" textFill="#f5f4f4">
+      <Button fx:id="bWeiter" layoutX="533.0" layoutY="345.0" mnemonicParsing="false" onAction="#Weiter" prefHeight="298.0" prefWidth="444.0" style="-fx-background-color: #559ACA;" text="Antwort Einloggen" textAlignment="CENTER" textFill="#f5f4f4">
          <font>
-            <Font size="50.0" />
+            <Font size="46.0" />
          </font>
       </Button>
    </children>
