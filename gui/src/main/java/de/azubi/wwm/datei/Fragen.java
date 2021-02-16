@@ -1,4 +1,4 @@
-package de.azubi.wwm.Datei;
+package de.azubi.wwm.datei;
 
 public class Fragen {
     private Integer id;
