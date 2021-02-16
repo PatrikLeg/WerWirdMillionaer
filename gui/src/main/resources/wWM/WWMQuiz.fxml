@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="1000.0" style="-fx-background-color: #302E93;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WWMQuizController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="1000.0" style="-fx-background-color: #302E93;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WWMQuizController">
    <children>
       <Button fx:id="bAntwortA" alignment="CENTER" layoutX="14.0" layoutY="31.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort A" textAlignment="CENTER" textFill="#e4dede">
          <font>
@@ -35,12 +35,12 @@
             <Font name="Arial" size="25.0" />
          </font>
       </Label>
-      <Button fx:id="bBeenden" layoutX="823.0" layoutY="31.0" mnemonicParsing="false" onAction="#Beende" prefHeight="48.0" prefWidth="143.0" style="-fx-background-color: #31539F;" text="Beenden" textFill="#f8f7f7">
+      <Button fx:id="bBeenden" layoutX="823.0" layoutY="31.0" mnemonicParsing="false" onAction="#beende" prefHeight="48.0" prefWidth="143.0" style="-fx-background-color: #31539F;" text="Beenden" textFill="#f8f7f7">
          <font>
             <Font name="Arial" size="25.0" />
          </font>
       </Button>
-      <Button fx:id="bWeiter" layoutX="533.0" layoutY="345.0" mnemonicParsing="false" onAction="#Weiter" prefHeight="298.0" prefWidth="444.0" style="-fx-background-color: #559ACA;" text="Antwort Einloggen" textAlignment="CENTER" textFill="#f5f4f4">
+      <Button fx:id="bWeiter" layoutX="533.0" layoutY="345.0" mnemonicParsing="false" onAction="#weiter" prefHeight="298.0" prefWidth="444.0" style="-fx-background-color: #559ACA;" text="Antwort Einloggen" textAlignment="CENTER" textFill="#f5f4f4">
          <font>
             <Font size="46.0" />
          </font>

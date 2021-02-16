@@ -20,7 +20,7 @@ public class StarterAppWWMStart extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        URL res = getClass().getResource("/WWM/WWMStart.fxml");
+        URL res = getClass().getResource("/wWM/WWMStart.fxml");
         Parent root = FXMLLoader.load(res);
         primaryStage.setTitle("WWMStart");
         primaryStage.setScene(new Scene(root, 1000, 666));
