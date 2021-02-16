@@ -12,8 +12,8 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class WWMQuizController {
-
-    private Button bBeende;
+    @FXML
+    private Button bBeenden;
 
     public void weiter(ActionEvent actionEvent) {
     }
@@ -22,7 +22,7 @@ public class WWMQuizController {
     @FXML
     public void beende(ActionEvent actionEvent) {
 
-        Stage stage = (Stage) bBeende.getScene().getWindow();
+        Stage stage = (Stage) bBeenden.getScene().getWindow();
 
         Scene scene = createNextScene();
         stage.setScene(scene);
