@@ -62,6 +62,7 @@ public enum Funfacts {
     FF30(30,"Ein Blauwal nimmt mit einem Happs fast 500.000 Kilokalorien zu sich.");
 
 
+
     public Integer getId() {
         return id;
     }
