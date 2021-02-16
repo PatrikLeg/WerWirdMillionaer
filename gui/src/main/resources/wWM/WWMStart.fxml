@@ -53,7 +53,7 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <Label fx:id="lFacts" alignment="TOP_LEFT" layoutX="43.0" layoutY="485.0" prefHeight="98.0" prefWidth="904.0" text="Funfact:" textFill="#fcf8f8">
+      <Label fx:id="lFacts" alignment="TOP_LEFT" layoutX="43.0" layoutY="485.0" prefHeight="98.0" prefWidth="904.0" text="Funfact:" textFill="#fcf8f8" wrapText="true">
          <font>
             <Font name="Arial" size="25.0" />
          </font>
