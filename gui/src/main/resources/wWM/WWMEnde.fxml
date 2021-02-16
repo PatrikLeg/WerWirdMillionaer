@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="1000.0" style="-fx-background-color: #302E93;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.azubi.wwm.gui.controller.WWMEndeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="1000.0" style="-fx-background-color: #302E93;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.azubi.wwm.gui.controller.WWMEndeController">
    <children>
       <Label fx:id="lMeldung" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="194.0" prefWidth="974.0" text="Generischer Antworttext" textAlignment="CENTER" textFill="#fffdfd">
          <font>
@@ -19,7 +16,7 @@
             <Font name="Arial" size="25.0" />
          </font>
       </Label>
-      <Button fx:id="lNochmal" alignment="CENTER" layoutX="14.0" layoutY="319.0" mnemonicParsing="false" onAction="#wiederhole" prefHeight="333.0" prefWidth="480.0" style="-fx-background-color: #31539F;" text="Nochmal" textFill="#f8f7f7">
+      <Button fx:id="bNochmal" alignment="CENTER" layoutX="14.0" layoutY="319.0" mnemonicParsing="false" onAction="#wiederhole" prefHeight="333.0" prefWidth="480.0" style="-fx-background-color: #31539F;" text="Nochmal" textFill="#f8f7f7">
          <font>
             <Font name="Arial" size="39.0" />
          </font>

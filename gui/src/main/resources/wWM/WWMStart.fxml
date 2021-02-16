@@ -20,22 +20,25 @@
             <Font name="Arial Black" size="52.0" />
          </font>
       </Button>
-      <RadioButton fx:id="rbLeicht" layoutX="55.0" layoutY="142.0" mnemonicParsing="false" text="Leicht" textFill="#fcfcfc">
+      <RadioButton fx:id="rbLeicht" layoutX="43.0" layoutY="137.0" mnemonicParsing="false" text="Leicht" textFill="#fcfcfc">
+         <toggleGroup>
+            <ToggleGroup fx:id="tgSchwierigkeit" />
+         </toggleGroup>
          <font>
             <Font name="Arial" size="25.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbMittel" layoutX="55.0" layoutY="240.0" mnemonicParsing="false" text="Mittel" textFill="#fffafa">
+      <RadioButton fx:id="rbMittel" layoutX="43.0" layoutY="232.0" mnemonicParsing="false" text="Mittel" textFill="#fffafa" toggleGroup="$tgSchwierigkeit">
          <font>
             <Font name="Arial" size="25.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbSchwer" layoutX="55.0" layoutY="337.0" mnemonicParsing="false" text="Schwer" textFill="#fffdfd">
+      <RadioButton fx:id="rbSchwer" layoutX="43.0" layoutY="336.0" mnemonicParsing="false" text="Schwer" textFill="#fffdfd" toggleGroup="$tgSchwierigkeit">
          <font>
             <Font name="Arial" size="25.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbWWM" layoutX="55.0" layoutY="433.0" mnemonicParsing="false" selected="true" text="Wer wird Millionär" textFill="#fff8f8">
+      <RadioButton fx:id="rbWWM" layoutX="43.0" layoutY="433.0" mnemonicParsing="false" selected="true" text="Wer wird Millionär" textFill="#fff8f8" toggleGroup="$tgSchwierigkeit">
          <font>
             <Font name="Arial" size="25.0" />
          </font>
