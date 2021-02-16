@@ -34,9 +34,6 @@ public class WWMStartController {
     @FXML
     private Label lFacts;
 
-
-
-
     @FXML
     void initialize() {
         lFacts.setText(FF1.getFact());
