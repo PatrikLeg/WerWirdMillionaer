@@ -1,20 +1,11 @@
 package de.azubi.wwm.datei;
 
-public class Funfacts {
-    private Integer id;
-    private String fact;
+public enum Funfacts {
+    FF1(1,"Fügt man die Zeichen der Tesla-Modelle zusammen, entsteht daraus die Zeichenfolge ‘S3XY’, was für das Wort ‘Sexy’ steht."),
+    FF2(2,"Das Unternehmen Apple hat genügend Geld, um sich jedes beliebige Sportteam der Welt kaufen zu können.");
 
-    public Funfacts(Integer id, String fact) {
 
-        this.id = id;
-
-        this.fact = fact;
-    }
-    
-    Funfacts ff1 = new Funfacts(1,"Fügt man die Zeichen der Tesla-Modelle zusammen, entsteht daraus die Zeichenfolge ‘S3XY’, was für das Wort ‘Sexy’ steht.");
-
-    Funfacts ff2 = new Funfacts(2,"Das Unternehmen Apple hat genügend Geld, um sich jedes beliebige Sportteam der Welt kaufen zu können.");
-
+/*
     Funfacts ff3 = new Funfacts(3,"Es gibt mehr Leute, die das Logo von McDonald’s erkennen, als Leute, die das Kreuz des Christentums erkennen.");
 
     Funfacts ff4 = new Funfacts(4,"Ein türkischer Vater hat seinem 19. Kind den Namen Yeter gegeben. Yeter bedeutet auf Deutsch ‘Es reicht’.");
@@ -70,7 +61,15 @@ public class Funfacts {
     Funfacts ff29 = new Funfacts(29,"Der Panzer eines Gürteltiers ist kugelsicher.");
 
     Funfacts ff30 = new Funfacts(30,"Ein Blauwal nimmt mit einem Happs fast 500.000 Kilokalorien zu sich.");
-    
+*/
+
+    public Integer getId() {
+        return id;
+    }
+    public String getFact() {
+        return fact;
+    }
+
     @Override
     public String toString() {
         return "Funfacts{" +
@@ -78,5 +77,18 @@ public class Funfacts {
                 ", fact='" + fact + '\'' +
                 '}';
     }
+    private Integer id;
+    private String fact;
 
+    Funfacts(Integer id, String fact) {
+        this.id = id;
+        this.fact = fact;
+    }
+
+    public Funfacts getZufallFact() {
+        int anz = Funfacts.values().length;
+        // TODO: Zufallszahl zwischen 1 und anz
+        int nr = 1;
+        return Funfacts.valueOf("FF"+nr);
+    }
 }
