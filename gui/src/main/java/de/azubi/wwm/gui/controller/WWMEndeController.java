@@ -1,4 +1,4 @@
-package controller;
+package de.azubi.wwm.gui.controller;
 
 import javafx.event.ActionEvent;
 

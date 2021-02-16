@@ -1,4 +1,4 @@
-package starter;
+package de.azubi.wwm.gui.starter;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
