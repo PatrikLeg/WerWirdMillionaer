@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="1000.0" style="-fx-background-color: #302E93;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.azubi.wwm.gui.controller.WWMQuizController">
+   <children>
+      <Button fx:id="bAntwortA" alignment="CENTER" layoutX="14.0" layoutY="31.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort A" textAlignment="CENTER" textFill="#e4dede">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="bAntwortB" alignment="CENTER" layoutX="14.0" layoutY="186.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort B" textAlignment="CENTER" textFill="#e4dede">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="bAntwortC" alignment="CENTER" layoutX="14.0" layoutY="344.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort C" textAlignment="CENTER" textFill="#e4dede">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="bAntwortD" alignment="CENTER" layoutX="14.0" layoutY="502.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort D" textFill="#e4dede">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Label fx:id="lQundA" alignment="TOP_LEFT" layoutX="536.0" layoutY="101.0" prefHeight="235.0" prefWidth="444.0" text="Frage" textFill="#f8f6f6">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="bBeenden" layoutX="823.0" layoutY="31.0" mnemonicParsing="false" onAction="#beende" prefHeight="48.0" prefWidth="143.0" style="-fx-background-color: #31539F;" text="Beenden" textFill="#f8f7f7">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="bWeiter" layoutX="533.0" layoutY="345.0" mnemonicParsing="false" onAction="#weiter" prefHeight="298.0" prefWidth="444.0" style="-fx-background-color: #559ACA;" text="Antwort Einloggen" textAlignment="CENTER" textFill="#f5f4f4">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
