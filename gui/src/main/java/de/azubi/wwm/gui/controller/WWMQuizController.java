@@ -27,36 +27,39 @@ public class WWMQuizController {
     private Label lQundA;
     @FXML
     private Button bBeenden;
+    @FXML
+    private Button bWeiter;
 
     public void weiter(ActionEvent actionEvent) {
         lQundA.setText("Die richtige Antwort ist " + Fragen.getRichtigeAntwort());
-        if(Fragen.getRichtigeAntwort().equals(bAntwortC.getText())){
+        if (Fragen.getRichtigeAntwort().equals(bAntwortC.getText())) {
             bAntwortC.setStyle("-fx-background-color:   green");
             bAntwortA.setStyle("-fx-background-color: red");
             bAntwortB.setStyle("-fx-background-color: red");
             bAntwortD.setStyle("-fx-background-color: red");
-        }
-        else if(Fragen.getRichtigeAntwort().equals(bAntwortA.getText())){
+        } else if (Fragen.getRichtigeAntwort().equals(bAntwortA.getText())) {
             bAntwortA.setStyle("-fx-background-color:   green");
             bAntwortC.setStyle("-fx-background-color: red");
             bAntwortB.setStyle("-fx-background-color: red");
             bAntwortD.setStyle("-fx-background-color: red");
-        }
-        else if(Fragen.getRichtigeAntwort().equals(bAntwortB.getText())){
+        } else if (Fragen.getRichtigeAntwort().equals(bAntwortB.getText())) {
             bAntwortB.setStyle("-fx-background-color:   green");
             bAntwortC.setStyle("-fx-background-color: red");
             bAntwortA.setStyle("-fx-background-color: red");
             bAntwortD.setStyle("-fx-background-color: red");
-        }
-        else if(Fragen.getRichtigeAntwort().equals(bAntwortD.getText())){
+        } else if (Fragen.getRichtigeAntwort().equals(bAntwortD.getText())) {
             bAntwortD.setStyle("-fx-background-color:   green");
             bAntwortC.setStyle("-fx-background-color: red");
             bAntwortB.setStyle("-fx-background-color: red");
             bAntwortA.setStyle("-fx-background-color: red");
         }
+        if (bWeiter.getText().equals("Antwort Einloggen")) {
+            bWeiter.setText("Naechste Frage");
 
+        } else if (bWeiter.getText().equals("Naechste Frage")) {
+            bWeiter.setText("Antwort Einloggen");
+        }
     }
-
     @FXML
     void initialize() {
         lQundA.setText(Fragen.getZufallFrage().getfrage());
