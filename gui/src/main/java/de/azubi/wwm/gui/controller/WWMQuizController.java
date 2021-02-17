@@ -1,5 +1,6 @@
 package de.azubi.wwm.gui.controller;
 
+
 import de.azubi.wwm.datei.Funfacts;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,7 +12,7 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import de.azubi.wwm.datei.Fragen;
 import java.io.IOException;
-
+import javafx.scene.paint.Color;
 
 public class WWMQuizController {
 
@@ -30,7 +31,10 @@ public class WWMQuizController {
     @FXML
     private Button bWeiter;
 
+    private Integer zaehler=0;
+
     public void weiter(ActionEvent actionEvent) {
+
         lQundA.setText("Die richtige Antwort ist " + Fragen.getRichtigeAntwort());
         if (Fragen.getRichtigeAntwort().equals(bAntwortC.getText())) {
             bAntwortC.setStyle("-fx-background-color:   green");
@@ -48,15 +52,25 @@ public class WWMQuizController {
             bAntwortA.setStyle("-fx-background-color: red");
             bAntwortD.setStyle("-fx-background-color: red");
         } else if (Fragen.getRichtigeAntwort().equals(bAntwortD.getText())) {
-            bAntwortD.setStyle("-fx-background-color:   green");
+            bAntwortD.setStyle("-fx-background-color:  green");
             bAntwortC.setStyle("-fx-background-color: red");
             bAntwortB.setStyle("-fx-background-color: red");
             bAntwortA.setStyle("-fx-background-color: red");
         }
         if (bWeiter.getText().equals("Antwort Einloggen")) {
+            zaehler +=1;
             bWeiter.setText("Naechste Frage");
+            if(zaehler==29){
+                bWeiter.setText("Quiz Beenden");
+                bWeiter.setStyle("-fx-background-color: yellow");
+                bWeiter.setTextFill(Color.BLACK);
+            }
 
         } else if (bWeiter.getText().equals("Naechste Frage")) {
+
+
+            zaehler +=1;
+
             bAntwortD.setStyle("-fx-background-color: #31539F");
             bAntwortA.setStyle("-fx-background-color: #31539F");
             bAntwortB.setStyle("-fx-background-color: #31539F");
@@ -84,6 +98,15 @@ public class WWMQuizController {
                 }
             }
 
+        }else if(bWeiter.getText().equals("Quiz Beenden")) {
+            zaehler +=1;
+            if(zaehler==30){
+
+                Stage stage = (Stage) bWeiter.getScene().getWindow();
+
+                Scene scene = createEndScene();
+                stage.setScene(scene);
+            }
         }
     }
     @FXML
@@ -123,6 +146,15 @@ public class WWMQuizController {
     private Scene createNextScene() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/wWM/WWMStart.fxml"));
+            return new Scene(root);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    private Scene createEndScene() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/wWM/WWMEnde.fxml"));
             return new Scene(root);
         } catch (IOException e) {
             e.printStackTrace();
