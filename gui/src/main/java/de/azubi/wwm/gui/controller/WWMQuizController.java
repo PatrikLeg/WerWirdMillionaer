@@ -57,7 +57,33 @@ public class WWMQuizController {
             bWeiter.setText("Naechste Frage");
 
         } else if (bWeiter.getText().equals("Naechste Frage")) {
+            bAntwortD.setStyle("-fx-background-color: #31539F");
+            bAntwortA.setStyle("-fx-background-color: #31539F");
+            bAntwortB.setStyle("-fx-background-color: #31539F");
+            bAntwortC.setStyle("-fx-background-color: #31539F");
             bWeiter.setText("Antwort Einloggen");
+            lQundA.setText(Fragen.getZufallFrage().getfrage());
+
+            bAntwortA.setText(Fragen.getAntworten());
+            bAntwortB.setText(Fragen.getAntworten());
+            bAntwortC.setText(Fragen.getAntworten());
+            bAntwortD.setText(Fragen.getAntworten());
+
+            while(bAntwortD.getText().equals(bAntwortC.getText()) || bAntwortD.getText().equals(bAntwortB.getText()) || bAntwortD.getText().equals(bAntwortA.getText()) ||
+                    bAntwortC.getText().equals(bAntwortA.getText()) || bAntwortC.getText().equals(bAntwortB.getText()) || bAntwortC.getText().equals(bAntwortD.getText()) ||
+                    bAntwortB.getText().equals(bAntwortC.getText()) || bAntwortB.getText().equals(bAntwortD.getText()) || bAntwortB.getText().equals(bAntwortA.getText()) ||
+                    bAntwortA.getText().equals(bAntwortC.getText()) || bAntwortA.getText().equals(bAntwortB.getText()) || bAntwortA.getText().equals(bAntwortD.getText())) {
+                if (bAntwortB.getText().equals(bAntwortA.getText())) {
+                    bAntwortB.setText(Fragen.getAntworten());
+                }
+                if (bAntwortC.getText().equals(bAntwortB.getText()) || bAntwortC.getText().equals(bAntwortA.getText())) {
+                    bAntwortC.setText(Fragen.getAntworten());
+                }
+                if (bAntwortD.getText().equals(bAntwortC.getText()) || bAntwortD.getText().equals(bAntwortB.getText()) || bAntwortD.getText().equals(bAntwortA.getText())) {
+                    bAntwortD.setText(Fragen.getAntworten());
+                }
+            }
+
         }
     }
     @FXML
