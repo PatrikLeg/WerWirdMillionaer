@@ -63,6 +63,7 @@ public enum Funfacts {
 
 
 
+
     public Integer getId() {
         return id;
     }
@@ -85,11 +86,14 @@ public enum Funfacts {
         this.fact = fact;
     }
 
-    public Funfacts getZufallFact() {
+    public static Funfacts getZufallFact() {
         int anz = Funfacts.values().length;
         // TODO: Zufallszahl zwischen 1 und anz
 
-        int nr = 2;
-        return Funfacts.valueOf("FF"+nr);
+        int nr = (int) (Math.random() * anz) + 1;
+        return Funfacts.valueOf("FF" + nr);
+
     }
+
+
 }
