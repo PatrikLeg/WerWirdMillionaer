@@ -54,6 +54,7 @@ public class WWMStartController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        //Das ist ein Kommentar
         return null;
     }
 }
