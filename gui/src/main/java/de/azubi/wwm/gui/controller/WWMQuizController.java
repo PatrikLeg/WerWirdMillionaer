@@ -29,7 +29,7 @@ public class WWMQuizController {
     private Button bBeenden;
 
     public void weiter(ActionEvent actionEvent) {
-        lQundA.setText("Die richtige Antwort ist " + Fragen.F1.getantwort1());
+        lQundA.setText("Die richtige Antwort ist " + Fragen.getRichtigeAntwort());
     }
 
     @FXML

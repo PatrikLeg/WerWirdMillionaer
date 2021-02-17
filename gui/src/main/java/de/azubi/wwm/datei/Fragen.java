@@ -88,7 +88,7 @@ public enum Fragen {
 
     F43(43, 1, "Welches Glas kennt man aus dem Chemieunterricht?", "Reagenzglas", "Fernglas", "Kirchenglas", "Weinglas", " Reagenzgläser werden in Laboratorien für chemische Reaktionen,Untersuchungen,zur Aufbewahrung von kleinen Flüssigkeitsmengen und vielem Weiteren verwendet."),
 
-    F44(44, 1, "Was tauscht ein Brautpaar während der Trauerzeremonie?", "Ringe", "Tagebücher", "Unterwäsche", "Panini-Sammelbilder", "Die Eheringe haben ihren Ursprung in Ägypten. Sie wurden damals auf der linken Hand getragen."),
+    F44(44, 1, "Was tauscht ein Brautpaar während der Trauzeremonie?", "Ringe", "Tagebücher", "Unterwäsche", "Panini-Sammelbilder", "Die Eheringe haben ihren Ursprung in Ägypten. Sie wurden damals auf der linken Hand getragen."),
 
     F45(45, 2, "Wie heißt bei Modenschauen der Laufsteg noch?", "Catwalk", "Horseroad", "Mouserun", "Dogstreet", "Beim Catwalk laufen Models über einen Laufsteg und präsentieren so meist die Designerkleidung eines Designers."),
 
@@ -255,9 +255,14 @@ public enum Fragen {
         return Fragen.valueOf("F"+ zahl);
     }
 
+    public static String getRichtigeAntwort(){
+        return Fragen.valueOf("F" + zahl).getantwort1();
+    }
+
     public static String getAntworten(){
         int zahl2 = (int) (Math.random()*4) + 1;
         if(zahl2 == 1){
+
             return Fragen.valueOf("F"+zahl).getantwort1();
         }
         else if(zahl2 == 2){
