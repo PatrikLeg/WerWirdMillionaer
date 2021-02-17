@@ -1,8 +1,6 @@
 package de.azubi.wwm.datei;
 
 
-
-
     public enum Fragen {
         F1(1,2,"Wie viele Zähne hat ein erwachsener Mensch normalerweise?","32","26","30","63","Ein erwachsener hat je 16 Zähne im Ober und 16 im Unterkiefer."),
 
@@ -194,6 +192,7 @@ package de.azubi.wwm.datei;
 
         F95(95, 2, "Welcher ehemalige Fußballspieler war für seine Kokain-Affäre allbekannt?", "Christoph Daum", "Gerd Müller", "Lothar Matthäus", "Thomas Allofs", "Christoph Daum ist ein deutscher Fußballtrainer, welcher sogar im Jahr 2016 bis 2017 Trainer der rumänischen Nationalmannschaft war. Im Jahr 2000 ");
 
+        private static int zahl;
         private Integer id;
         private Integer schwierigkeit;
         private String frage;
@@ -225,51 +224,51 @@ package de.azubi.wwm.datei;
         this.antwortsatz = antwortsatz;
     }
 
-    public Integer getid() { return id; }
+    public Integer getid() {
 
-    public void setid(Integer id) { this.id = id; }
+        return id; }
+
 
     public Integer getschwierigkeit() { return schwierigkeit; }
 
-    public void setschwierigkeit(Integer schwierigkeit) { this.schwierigkeit = schwierigkeit; }
 
     public String getfrage() { return frage; }
 
-    public void setfrage(String frage) { this.frage = frage; }
 
     public String getantwort1() { return antwort1; }
 
-    public void setantwort1(String antwort1) { this.antwort1 = antwort1; }
 
     public String getantwort2() { return antwort2; }
 
-    public void setantwort2(String antwort2) { this.antwort2 = antwort2; }
 
     public String getantwort3() { return antwort3; }
 
-    public void setantwort3(String antwort3) { this.antwort1 = antwort3; }
 
     public String getantwort4() { return antwort4; }
 
-    public void setantwort4(String antwort4) { this.antwort4 = antwort4; }
 
     public String getantwortsatz() { return antwortsatz; }
 
-    public void setantwortsatz(String antwortsatz) { this.antwortsatz = antwortsatz; }
+    public static Fragen getZufallFrage(){
+        int anzahl = Fragen.values().length;
+        zahl = (int) (Math.random()*anzahl) + 1;
+        return Fragen.valueOf("F"+ zahl);
+    }
 
-
-    @Override
-    public String toString() {
-        return "Fragen{" +
-                "id='" + id + '\'' +
-                ",schwierigkeit ='" + schwierigkeit + '\'' +
-                ",frage='" + frage + '\'' +
-                ",antwort1='" + antwort1  + '\'' +
-                ",antwort2  ='" + antwort2 + '\'' +
-                ",antwort3 '" + antwort3 + '\'' +
-                ",antwort4 ='" + antwort4 + '\'' +
-                ",antwortsatz ='" + antwortsatz + '\'' +
-                '}';
+    public static String getAntworten(){
+        int zahl2 = (int) (Math.random()*4) + 1;
+        if(zahl2 == 1){
+            return Fragen.valueOf("F"+zahl).getantwort1();
+        }
+        else if(zahl2 == 2){
+            return Fragen.valueOf("F"+zahl).getantwort2();
+        }
+        else if(zahl2 == 3){
+            return Fragen.valueOf("F"+zahl).getantwort3();
+        }
+        else{
+            return Fragen.valueOf("F"+zahl).getantwort4();
+        }
     }
 
 

@@ -12,10 +12,7 @@ import javafx.scene.control.RadioButton;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.Locale;
 
-import static de.azubi.wwm.datei.Funfacts.FF1;
-import static de.azubi.wwm.datei.Funfacts.FF2;
 
 public class WWMStartController {
 
