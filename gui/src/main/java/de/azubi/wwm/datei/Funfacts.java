@@ -63,7 +63,10 @@ public enum Funfacts {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/feature/5-Datei/Fragen-erstellen
     public Integer getId() {
         return id;
     }
@@ -86,6 +89,7 @@ public enum Funfacts {
         this.fact = fact;
     }
 
+<<<<<<< HEAD
     public static Funfacts getZufallFact() {
         int anz = Funfacts.values().length;
         // TODO: Zufallszahl zwischen 1 und anz
@@ -96,4 +100,13 @@ public enum Funfacts {
     }
 
 
+=======
+    public Funfacts getZufallFact() {
+        int anz = Funfacts.values().length;
+        // TODO: Zufallszahl zwischen 1 und anz
+
+        int nr = 2;
+        return Funfacts.valueOf("FF"+nr);
+    }
+>>>>>>> origin/feature/5-Datei/Fragen-erstellen
 }
