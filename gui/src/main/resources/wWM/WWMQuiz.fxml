@@ -10,22 +10,22 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="1000.0" style="-fx-background-color: #302E93;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.azubi.wwm.gui.controller.WWMQuizController">
    <children>
-      <Button fx:id="bAntwortA" alignment="CENTER" layoutX="14.0" layoutY="31.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort A" textAlignment="CENTER" textFill="#e4dede" wrapText="true">
+      <Button fx:id="bAntwortA" alignment="CENTER" layoutX="14.0" layoutY="31.0" mnemonicParsing="false" onAction="#waehleA" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort A" textAlignment="CENTER" textFill="#e4dede" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Button>
-      <Button fx:id="bAntwortB" alignment="CENTER" layoutX="14.0" layoutY="186.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort B" textAlignment="CENTER" textFill="#e4dede" wrapText="true">
+      <Button fx:id="bAntwortB" alignment="CENTER" layoutX="14.0" layoutY="186.0" mnemonicParsing="false" onAction="#waehleB" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort B" textAlignment="CENTER" textFill="#e4dede" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Button>
-      <Button fx:id="bAntwortC" alignment="CENTER" layoutX="14.0" layoutY="344.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort C" textAlignment="CENTER" textFill="#e4dede" wrapText="true">
+      <Button fx:id="bAntwortC" alignment="CENTER" layoutX="14.0" layoutY="344.0" mnemonicParsing="false" onAction="#waehleC" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort C" textAlignment="CENTER" textFill="#e4dede" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Button>
-      <Button fx:id="bAntwortD" alignment="CENTER" layoutX="14.0" layoutY="502.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort D" textAlignment="CENTER" textFill="#e4dede" wrapText="true">
+      <Button fx:id="bAntwortD" alignment="CENTER" layoutX="14.0" layoutY="502.0" mnemonicParsing="false" onAction="#waehleD" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: #31539F;" text="Antwort D" textAlignment="CENTER" textFill="#e4dede" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>

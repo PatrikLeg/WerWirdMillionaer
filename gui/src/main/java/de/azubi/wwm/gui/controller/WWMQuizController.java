@@ -30,6 +30,31 @@ public class WWMQuizController {
 
     public void weiter(ActionEvent actionEvent) {
         lQundA.setText("Die richtige Antwort ist " + Fragen.getRichtigeAntwort());
+        if(Fragen.getRichtigeAntwort().equals(bAntwortC.getText())){
+            bAntwortC.setStyle("-fx-background-color:   green");
+            bAntwortA.setStyle("-fx-background-color: red");
+            bAntwortB.setStyle("-fx-background-color: red");
+            bAntwortD.setStyle("-fx-background-color: red");
+        }
+        else if(Fragen.getRichtigeAntwort().equals(bAntwortA.getText())){
+            bAntwortA.setStyle("-fx-background-color:   green");
+            bAntwortC.setStyle("-fx-background-color: red");
+            bAntwortB.setStyle("-fx-background-color: red");
+            bAntwortD.setStyle("-fx-background-color: red");
+        }
+        else if(Fragen.getRichtigeAntwort().equals(bAntwortB.getText())){
+            bAntwortB.setStyle("-fx-background-color:   green");
+            bAntwortC.setStyle("-fx-background-color: red");
+            bAntwortA.setStyle("-fx-background-color: red");
+            bAntwortD.setStyle("-fx-background-color: red");
+        }
+        else if(Fragen.getRichtigeAntwort().equals(bAntwortD.getText())){
+            bAntwortD.setStyle("-fx-background-color:   green");
+            bAntwortC.setStyle("-fx-background-color: red");
+            bAntwortB.setStyle("-fx-background-color: red");
+            bAntwortA.setStyle("-fx-background-color: red");
+        }
+
     }
 
     @FXML
@@ -74,5 +99,33 @@ public class WWMQuizController {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public void waehleD(ActionEvent actionEvent) {
+        bAntwortD.setStyle("-fx-background-color: purple");
+        bAntwortA.setStyle("-fx-background-color: #31539F");
+        bAntwortB.setStyle("-fx-background-color: #31539F");
+        bAntwortC.setStyle("-fx-background-color: #31539F");
+    }
+
+    public void waehleA(ActionEvent actionEvent) {
+        bAntwortA.setStyle("-fx-background-color: purple");
+        bAntwortC.setStyle("-fx-background-color: #31539F");
+        bAntwortB.setStyle("-fx-background-color: #31539F");
+        bAntwortD.setStyle("-fx-background-color: #31539F");
+    }
+
+    public void waehleB(ActionEvent actionEvent) {
+        bAntwortB.setStyle("-fx-background-color: purple");
+        bAntwortA.setStyle("-fx-background-color: #31539F");
+        bAntwortC.setStyle("-fx-background-color: #31539F");
+        bAntwortD.setStyle("-fx-background-color: #31539F");
+    }
+
+    public void waehleC(ActionEvent actionEvent) {
+        bAntwortC.setStyle("-fx-background-color:   purple");
+        bAntwortA.setStyle("-fx-background-color: #31539F");
+        bAntwortB.setStyle("-fx-background-color: #31539F");
+        bAntwortD.setStyle("-fx-background-color: #31539F");
     }
 }
