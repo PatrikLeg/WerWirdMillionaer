@@ -6,10 +6,10 @@ package de.azubi.wwm.datei;
     public enum Fragen {
         F1(1,2,"Wie viele Zähne hat ein erwachsener Mensch normalerweise?","32","26","30","63","Ein erwachsener hat je 16 Zähne im Ober und 16 im Unterkiefer."),
 
-        F2(2, 1, "Welches der folgenden Farben zählt nicht zu den Primärfarben?", "Grün", "Blau", "Gelb", "Rot", "Rot,Blau und Gelb sind die drei Primärfarben,Grün ist eine Sekundärfarbe,welche durch Mischung von Blau und Gelb entsteht.");
-/*
-        Fragen f3 = new Fragen(3, 4, "Was soll Cäsar gesagt haben,als er den Rubikon überquerte?", "alea iacta est", "veni,vidi,vici", "divide et empera", "et tu,brute", "Übersetzt bedeutet es ‘ Die Würfel sind gefallen’.");
+        F2(2, 1, "Welches der folgenden Farben zählt nicht zu den Primärfarben?", "Grün", "Blau", "Gelb", "Rot", "Rot,Blau und Gelb sind die drei Primärfarben,Grün ist eine Sekundärfarbe,welche durch Mischung von Blau und Gelb entsteht."),
 
+        F3(3, 4, "Was soll Cäsar gesagt haben,als er den Rubikon überquerte?", "alea iacta est", "veni,vidi,vici", "divide et empera", "et tu,brute", "Übersetzt bedeutet es ‘ Die Würfel sind gefallen’.");
+/*
         Fragen f4 = new Fragen(4, 3, "Was ist nicht nur eine Programmiersprache,sondern auch eine Insel von Indonesien?", "Java", "Python", "Sumatra", "Medan", "Java ist von den genannten Antworten sowohl eine Insel,als auch eine Programmiersprache.");
 
         Fragen f5 = new Fragen(5, 3, "Wie viele Oscars gewann der Film Titanic?", "11", "10", "12", "13", "Mit 14 Nominierungen und 11 gewonnenen Oscars ist Titanic auf Platz 1.");
@@ -104,8 +104,8 @@ package de.azubi.wwm.datei;
 
         Fragen f50 = new Fragen(50, 2, "Wie lautet eine Bezeichnung für ein aufgefundenes Kind,das zuvor von den Eltern ausgesetzt wurde?", "Findelkind", "Schlüsselkind", "Wolfskind", "Schmuddelkind", "Findling oder auch Fundkind genannt,wurden häufig als Säugling ausgesetzt,in der Hoffnung,dass sich jemand um sie kümmern würde.");
 
+*/
 
- */
         private Integer id;
         private Integer schwierigkeit;
         private String frage;
