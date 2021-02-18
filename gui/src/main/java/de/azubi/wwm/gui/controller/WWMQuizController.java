@@ -33,7 +33,7 @@ public class WWMQuizController {
     private Label lAnzahlFrage;
 
     private Integer zaehler=0;
-    private int anzahlFrage = 1;
+    public static int anzahlFrage = 1;
 
     public void weiter(ActionEvent actionEvent) {
 
