@@ -299,6 +299,6 @@ public enum Fragen {
             return Fragen.valueOf("F"+zahl).getantwort4();
         }
     }
-
+// Gartenschlauch
 
 }
