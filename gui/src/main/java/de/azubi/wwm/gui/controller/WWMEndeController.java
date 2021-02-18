@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import de.azubi.wwm.datei.Fragen;
 
 import java.io.IOException;
 import de.azubi.wwm.gui.controller.WWMQuizController;
@@ -46,7 +47,7 @@ public class WWMEndeController {
     @FXML
     public void wiederhole(ActionEvent actionEvent) {
 
-
+        Fragen.zaehler = 1;
 
         Stage stage = (Stage) bNochmal.getScene().getWindow();
 
@@ -66,7 +67,7 @@ public class WWMEndeController {
             lMeldung.setText("Herzlichen Glückwunsch du bist jetzt Millionär");
         }
 
-        lPunktzahl.setText("15 / " + WWMQuizController.anzahlFrage);
+        lPunktzahl.setText(WWMQuizController.anzahlFrage + " / 15");
     }
     private Scene createQuizScene() {
         try {

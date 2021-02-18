@@ -34,35 +34,51 @@ public class WWMQuizController {
 
     private Integer zaehler=0;
     public static int anzahlFrage = 1;
+    private int zahl;
 
     public void weiter(ActionEvent actionEvent) {
 
-        lQundA.setText("Die richtige Antwort ist " + Fragen.getRichtigeAntwort());
-
-        if (Fragen.getRichtigeAntwort().equals(bAntwortC.getText())) {
-            bAntwortC.setStyle("-fx-background-color:   green");
-            bAntwortA.setStyle("-fx-background-color: red");
-            bAntwortB.setStyle("-fx-background-color: red");
-            bAntwortD.setStyle("-fx-background-color: red");
-        } else if (Fragen.getRichtigeAntwort().equals(bAntwortA.getText())) {
-            bAntwortA.setStyle("-fx-background-color:   green");
-            bAntwortC.setStyle("-fx-background-color: red");
-            bAntwortB.setStyle("-fx-background-color: red");
-            bAntwortD.setStyle("-fx-background-color: red");
-        } else if (Fragen.getRichtigeAntwort().equals(bAntwortB.getText())) {
-            bAntwortB.setStyle("-fx-background-color:   green");
-            bAntwortC.setStyle("-fx-background-color: red");
-            bAntwortA.setStyle("-fx-background-color: red");
-            bAntwortD.setStyle("-fx-background-color: red");
-        } else if (Fragen.getRichtigeAntwort().equals(bAntwortD.getText())) {
-            bAntwortD.setStyle("-fx-background-color:  green");
-            bAntwortC.setStyle("-fx-background-color: red");
-            bAntwortB.setStyle("-fx-background-color: red");
-            bAntwortA.setStyle("-fx-background-color: red");
-        }
         if (bWeiter.getText().equals("Antwort Einloggen")) {
             zaehler +=1;
-            bWeiter.setText("Naechste Frage");
+
+            if(zahl == 1){
+                if (Fragen.getRichtigeAntwort().equals(bAntwortC.getText())) {
+                    bAntwortC.setStyle("-fx-background-color:   green");
+                    bAntwortA.setStyle("-fx-background-color: red");
+                    bAntwortB.setStyle("-fx-background-color: red");
+                    bAntwortD.setStyle("-fx-background-color: red");
+                } else if (Fragen.getRichtigeAntwort().equals(bAntwortA.getText())) {
+                    bAntwortA.setStyle("-fx-background-color:   green");
+                    bAntwortC.setStyle("-fx-background-color: red");
+                    bAntwortB.setStyle("-fx-background-color: red");
+                    bAntwortD.setStyle("-fx-background-color: red");
+                } else if (Fragen.getRichtigeAntwort().equals(bAntwortB.getText())) {
+                    bAntwortB.setStyle("-fx-background-color:   green");
+                    bAntwortC.setStyle("-fx-background-color: red");
+                    bAntwortA.setStyle("-fx-background-color: red");
+                    bAntwortD.setStyle("-fx-background-color: red");
+                } else if (Fragen.getRichtigeAntwort().equals(bAntwortD.getText())) {
+                    bAntwortD.setStyle("-fx-background-color:  green");
+                    bAntwortC.setStyle("-fx-background-color: red");
+                    bAntwortB.setStyle("-fx-background-color: red");
+                    bAntwortA.setStyle("-fx-background-color: red");
+                }
+                bWeiter.setStyle("-fx-background-color:  #559ACA");
+                lQundA.setText("Die richtige Antwort ist " + Fragen.getRichtigeAntwort());
+                bWeiter.setText("Naechste Frage");
+                zahl = 0;
+            }else if (zahl == 2){
+                Stage stage = (Stage) bWeiter.getScene().getWindow();
+                Scene scene = createEndScene();
+                stage.setScene(scene);
+                bWeiter.setStyle("-fx-background-color:  #559ACA");
+                anzahlFrage = 1;
+                zahl = 0;
+
+            }else {
+                bWeiter.setStyle("-fx-background-color: RED");
+            }
+
             if(zaehler==29){
                 bWeiter.setText("Quiz Beenden");
                 bWeiter.setStyle("-fx-background-color: yellow");
@@ -171,6 +187,12 @@ public class WWMQuizController {
         bAntwortA.setStyle("-fx-background-color: #31539F");
         bAntwortB.setStyle("-fx-background-color: #31539F");
         bAntwortC.setStyle("-fx-background-color: #31539F");
+        if(Fragen.getRichtigeAntwort().equals(bAntwortD.getText())){
+            zahl = 1;
+        }else{
+            zahl = 2;
+        }
+
         //bAntwortD.setFocusTraversable(true);
     }
 
@@ -179,6 +201,11 @@ public class WWMQuizController {
         bAntwortC.setStyle("-fx-background-color: #31539F");
         bAntwortB.setStyle("-fx-background-color: #31539F");
         bAntwortD.setStyle("-fx-background-color: #31539F");
+        if(Fragen.getRichtigeAntwort().equals(bAntwortA.getText())){
+            zahl = 1;
+        }else{
+            zahl = 2;
+        }
     }
 
     public void waehleB(ActionEvent actionEvent) {
@@ -186,6 +213,11 @@ public class WWMQuizController {
         bAntwortA.setStyle("-fx-background-color: #31539F");
         bAntwortC.setStyle("-fx-background-color: #31539F");
         bAntwortD.setStyle("-fx-background-color: #31539F");
+        if(Fragen.getRichtigeAntwort().equals(bAntwortB.getText())){
+            zahl = 1;
+        }else{
+            zahl = 2;
+        }
     }
 
     public void waehleC(ActionEvent actionEvent) {
@@ -193,5 +225,10 @@ public class WWMQuizController {
         bAntwortA.setStyle("-fx-background-color: #31539F");
         bAntwortB.setStyle("-fx-background-color: #31539F");
         bAntwortD.setStyle("-fx-background-color: #31539F");
+        if(Fragen.getRichtigeAntwort().equals(bAntwortC.getText())){
+            zahl = 1;
+        }else{
+            zahl = 2;
+        }
     }
 }
