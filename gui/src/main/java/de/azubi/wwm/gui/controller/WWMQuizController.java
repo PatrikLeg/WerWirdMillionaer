@@ -38,6 +38,7 @@ public class WWMQuizController {
     public void weiter(ActionEvent actionEvent) {
 
         lQundA.setText("Die richtige Antwort ist " + Fragen.getRichtigeAntwort());
+
         if (Fragen.getRichtigeAntwort().equals(bAntwortC.getText())) {
             bAntwortC.setStyle("-fx-background-color:   green");
             bAntwortA.setStyle("-fx-background-color: red");
@@ -139,7 +140,7 @@ public class WWMQuizController {
 
     @FXML
     public void beende(ActionEvent actionEvent) {
-
+        anzahlFrage = 1;
         Stage stage = (Stage) bBeenden.getScene().getWindow();
 
         Scene scene = createNextScene();
