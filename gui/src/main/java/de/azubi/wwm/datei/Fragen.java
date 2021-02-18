@@ -1,6 +1,9 @@
 package de.azubi.wwm.datei;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public enum Fragen {
     F1(1,2,"Wie viele Zähne hat ein erwachsener Mensch normalerweise?","32","26","30","63","Ein erwachsener hat je 16 Zähne im Ober und 16 im Unterkiefer."),
 
@@ -249,9 +252,22 @@ public enum Fragen {
 
     public String getantwortsatz() { return antwortsatz; }
 
+    private static List<Integer> gefalleneZahlen = new ArrayList<>();
+
+    public static void setzeFragenKatalogZurueck() {
+        gefalleneZahlen = new ArrayList<>();
+    }
+
     public static Fragen getZufallFrage(){
         int anzahl = Fragen.values().length;
-        zahl = (int) (Math.random()*anzahl) + 1;
+        boolean gefunden = false;
+        while (!gefunden) {
+            zahl = (int) (Math.random()*anzahl) + 1;
+            if (!gefalleneZahlen.contains(zahl)) {
+                gefalleneZahlen.add(zahl);
+                    gefunden = true;
+            }
+        }
         return Fragen.valueOf("F"+ zahl);
     }
 

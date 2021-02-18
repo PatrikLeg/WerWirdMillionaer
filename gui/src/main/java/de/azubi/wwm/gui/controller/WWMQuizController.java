@@ -1,7 +1,6 @@
 package de.azubi.wwm.gui.controller;
 
 
-import de.azubi.wwm.datei.Funfacts;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -30,8 +29,11 @@ public class WWMQuizController {
     private Button bBeenden;
     @FXML
     private Button bWeiter;
+    @FXML
+    private Label lAnzahlFrage;
 
     private Integer zaehler=0;
+    private int anzahlFrage = 1;
 
     public void weiter(ActionEvent actionEvent) {
 
@@ -67,8 +69,8 @@ public class WWMQuizController {
             }
 
         } else if (bWeiter.getText().equals("Naechste Frage")) {
-
-
+            anzahlFrage +=1;
+            lAnzahlFrage.setText("Frage: " + anzahlFrage);
             zaehler +=1;
 
             bAntwortD.setStyle("-fx-background-color: #31539F");
@@ -111,6 +113,7 @@ public class WWMQuizController {
     }
     @FXML
     void initialize() {
+        lAnzahlFrage.setText("Frage: " + anzahlFrage);
         lQundA.setText(Fragen.getZufallFrage().getfrage());
 
         bAntwortA.setText(Fragen.getAntworten());
