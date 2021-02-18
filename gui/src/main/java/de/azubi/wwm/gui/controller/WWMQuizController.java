@@ -167,6 +167,7 @@ public class WWMQuizController {
         bAntwortA.setStyle("-fx-background-color: #31539F");
         bAntwortB.setStyle("-fx-background-color: #31539F");
         bAntwortC.setStyle("-fx-background-color: #31539F");
+        //bAntwortD.setFocusTraversable(true);
     }
 
     public void waehleA(ActionEvent actionEvent) {
