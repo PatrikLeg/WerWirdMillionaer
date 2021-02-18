@@ -10,7 +10,7 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-
+import de.azubi.wwm.gui.controller.WWMQuizController;
 public class WWMEndeController {
     @FXML
     private Label lMeldung;
@@ -20,7 +20,8 @@ public class WWMEndeController {
     private Button bNochmal;
     @FXML
     private Button bZuruck;
-    @FXML
+
+
     public void zuruck(ActionEvent actionEvent) {
 
 
@@ -52,6 +53,10 @@ public class WWMEndeController {
         Scene scene = createQuizScene();
         stage.setScene(scene);
 
+    }
+    @FXML
+    void initialize() {
+        lPunktzahl.setText("Du bist zur " + WWMQuizController.anzahlFrage + " Frage gekommen");
     }
     private Scene createQuizScene() {
         try {
