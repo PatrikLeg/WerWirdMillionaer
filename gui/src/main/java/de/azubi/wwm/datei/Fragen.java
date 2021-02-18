@@ -196,6 +196,7 @@ public enum Fragen {
     F95(95, 2, "Welcher ehemalige Fußballspieler war für seine Kokain-Affäre allbekannt?", "Christoph Daum", "Gerd Müller", "Lothar Matthäus", "Thomas Allofs", "Christoph Daum ist ein deutscher Fußballtrainer, welcher sogar im Jahr 2016 bis 2017 Trainer der rumänischen Nationalmannschaft war. Im Jahr 2000 ");
 
     private static int zahl;
+    private static Integer zaehler = 1;
     private Integer id;
     private Integer schwierigkeit;
     private String frage;
@@ -204,6 +205,7 @@ public enum Fragen {
     private String antwort3;
     private String antwort4;
     private String antwortsatz;
+
 
 
 
@@ -263,9 +265,15 @@ public enum Fragen {
         boolean gefunden = false;
         while (!gefunden) {
             zahl = (int) (Math.random()*anzahl) + 1;
-            if (!gefalleneZahlen.contains(zahl)) {
-                gefalleneZahlen.add(zahl);
+            if (Fragen.valueOf("F"+zahl).getschwierigkeit() == zaehler){
+                if (!gefalleneZahlen.contains(zahl)) {
+                    gefalleneZahlen.add(zahl);
                     gefunden = true;
+                    if(gefalleneZahlen.size() == 5 || gefalleneZahlen.size() == 10 ||
+                            gefalleneZahlen.size() == 13){
+                        zaehler +=1;
+                    }
+            }
             }
         }
         return Fragen.valueOf("F"+ zahl);
