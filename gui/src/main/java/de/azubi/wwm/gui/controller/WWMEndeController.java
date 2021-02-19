@@ -26,7 +26,7 @@ public class WWMEndeController {
     public void zuruck(ActionEvent actionEvent) {
 
 
-
+            Fragen.zaehler = 1;
             Stage stage = (Stage) bZuruck.getScene().getWindow();
 
             Scene scene = createStartScene();

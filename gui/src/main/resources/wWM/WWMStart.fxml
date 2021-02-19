@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane cacheHint="SPEED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #302E93;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.azubi.wwm.gui.controller.WWMStartController">
+<AnchorPane cacheHint="SPEED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #302E93;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.azubi.wwm.gui.controller.WWMStartController">
    <children>
       <Label fx:id="lUeberschrift" alignment="TOP_CENTER" contentDisplay="TOP" graphicTextGap="40.0" layoutX="206.0" layoutY="40.0" prefHeight="50.0" prefWidth="589.0" text="Wer wird Millionär App" textAlignment="CENTER" textFill="WHITE" underline="true">
          <font>
@@ -48,7 +44,7 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <Label fx:id="lHighscore" layoutX="777.0" layoutY="90.0" prefHeight="27.0" prefWidth="189.0" text="Highscore: 0" textFill="#ecff0a">
+      <Label fx:id="lHighscore" layoutX="650.0" layoutY="90.0" prefHeight="27.0" prefWidth="300.0" text="Highscore: 0" textFill="#ecff0a">
          <font>
             <Font size="25.0" />
          </font>

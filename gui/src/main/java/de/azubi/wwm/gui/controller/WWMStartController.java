@@ -46,6 +46,7 @@ public class WWMStartController {
         lHighscore.setText("Highscore: " + startKapital + "€");
         lFacts.setText("FunFact: " + Funfacts.getZufallFact().getFact());
         WWMQuizController.anzahlFrage = 1;
+        Fragen.zaehler = 1;
     }
 
 

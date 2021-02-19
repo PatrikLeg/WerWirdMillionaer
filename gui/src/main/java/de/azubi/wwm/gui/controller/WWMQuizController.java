@@ -158,6 +158,7 @@ public class WWMQuizController {
     @FXML
     public void beende(ActionEvent actionEvent) {
         anzahlFrage = 1;
+        Fragen.zaehler = 1;
         Stage stage = (Stage) bBeenden.getScene().getWindow();
 
         Scene scene = createNextScene();
