@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane cacheHint="SPEED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #302E93;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.azubi.wwm.gui.controller.WWMStartController">
+<AnchorPane cacheHint="SPEED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #302E93;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.azubi.wwm.gui.controller.WWMStartController">
    <children>
       <Label fx:id="lUeberschrift" alignment="TOP_CENTER" contentDisplay="TOP" graphicTextGap="40.0" layoutX="206.0" layoutY="40.0" prefHeight="50.0" prefWidth="589.0" text="Wer wird Millionär App" textAlignment="CENTER" textFill="WHITE" underline="true">
          <font>
@@ -20,22 +16,25 @@
             <Font name="Arial Black" size="52.0" />
          </font>
       </Button>
-      <RadioButton fx:id="rbLeicht" layoutX="55.0" layoutY="142.0" mnemonicParsing="false" text="Leicht" textFill="#fcfcfc">
+      <RadioButton fx:id="rbLeicht" layoutX="43.0" layoutY="137.0" mnemonicParsing="false" text="Leicht" textFill="#fcfcfc">
+         <toggleGroup>
+            <ToggleGroup fx:id="tgSchwierigkeit" />
+         </toggleGroup>
          <font>
             <Font name="Arial" size="25.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbMittel" layoutX="55.0" layoutY="240.0" mnemonicParsing="false" text="Mittel" textFill="#fffafa">
+      <RadioButton fx:id="rbMittel" layoutX="43.0" layoutY="232.0" mnemonicParsing="false" text="Mittel" textFill="#fffafa" toggleGroup="$tgSchwierigkeit">
          <font>
             <Font name="Arial" size="25.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbSchwer" layoutX="55.0" layoutY="337.0" mnemonicParsing="false" text="Schwer" textFill="#fffdfd">
+      <RadioButton fx:id="rbSchwer" layoutX="43.0" layoutY="336.0" mnemonicParsing="false" text="Schwer" textFill="#fffdfd" toggleGroup="$tgSchwierigkeit">
          <font>
             <Font name="Arial" size="25.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbWWM" layoutX="55.0" layoutY="433.0" mnemonicParsing="false" selected="true" text="Wer wird Millionär" textFill="#fff8f8">
+      <RadioButton fx:id="rbWWM" layoutX="43.0" layoutY="433.0" mnemonicParsing="false" selected="true" text="Wer wird Millionär" textFill="#fff8f8" toggleGroup="$tgSchwierigkeit">
          <font>
             <Font name="Arial" size="25.0" />
          </font>
@@ -45,12 +44,12 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <Label fx:id="lHighscore" layoutX="777.0" layoutY="90.0" prefHeight="27.0" prefWidth="189.0" text="Highscore: 0" textFill="#ecff0a">
+      <Label fx:id="lHighscore" layoutX="650.0" layoutY="90.0" prefHeight="27.0" prefWidth="300.0" text="Highscore: 0" textFill="#ecff0a">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label fx:id="lFacts" alignment="TOP_LEFT" layoutX="43.0" layoutY="485.0" prefHeight="98.0" prefWidth="904.0" text="Funfact:" textFill="#fcf8f8">
+      <Label fx:id="lFacts" alignment="TOP_LEFT" layoutX="43.0" layoutY="485.0" prefHeight="98.0" prefWidth="904.0" text="Funfact:" textFill="#fcf8f8" wrapText="true">
          <font>
             <Font name="Arial" size="25.0" />
          </font>
