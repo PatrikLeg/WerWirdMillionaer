@@ -48,7 +48,7 @@ public class WWMEndeController {
     public void wiederhole(ActionEvent actionEvent) {
 
         Fragen.zaehler = 1;
-
+        WWMQuizController.anzahlFrage = 1;
         Stage stage = (Stage) bNochmal.getScene().getWindow();
 
         Scene scene = createQuizScene();

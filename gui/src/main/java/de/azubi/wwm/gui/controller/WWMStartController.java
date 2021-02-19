@@ -10,7 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.stage.Stage;
-
+import de.azubi.wwm.datei.Fragen;
 import java.io.IOException;
 
 
@@ -32,10 +32,20 @@ public class WWMStartController {
     private Label lHighscore;
     @FXML
     private Label lFacts;
+    private int startKapital = 50;
 
     @FXML
     void initialize() {
+        if(WWMQuizController.anzahlFrage == 15){
+            lHighscore.setText("Highscore: 1.000.000€");
+        }else{
+            for(int i = 1; i < WWMQuizController.anzahlFrage; i++){
+                startKapital = startKapital * 2;
+            }
+        }
+        lHighscore.setText("Highscore: " + startKapital + "€");
         lFacts.setText("FunFact: " + Funfacts.getZufallFact().getFact());
+        WWMQuizController.anzahlFrage = 1;
     }
 
 

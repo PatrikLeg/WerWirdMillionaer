@@ -70,12 +70,9 @@ public class WWMQuizController {
                 }else if (zahl == 2){
                 bWeiter.setText("Quiz Beenden");
                 lQundA.setText("Die richtige Antwort ist " + Fragen.getAntwortsatz());
-
                 bWeiter.setStyle("-fx-background-color: yellow");
                 bWeiter.setTextFill(Color.BLACK);
 
-
-                anzahlFrage = 1;
                 zahl = 0;
 
                 }else {
