@@ -492,7 +492,12 @@ public enum Fragen {
     }
 
     public static String getRichtigeAntwort(){
+
         return Fragen.valueOf("F" + zahl).getantwort1();
+    }
+
+    public static String getAntwortsatz(){
+        return Fragen.valueOf("F" + zahl).getantwort1() + ": " + Fragen.valueOf("F" + zahl).getantwortsatz();
     }
 
     public static String getAntworten(){

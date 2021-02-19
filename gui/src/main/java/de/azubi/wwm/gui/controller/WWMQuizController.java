@@ -64,11 +64,13 @@ public class WWMQuizController {
                     bAntwortA.setStyle("-fx-background-color: red");
                 }
                 bWeiter.setStyle("-fx-background-color:  #559ACA");
-                lQundA.setText("Die richtige Antwort ist " + Fragen.getRichtigeAntwort());
+                lQundA.setText("Die richtige Antwort ist " + Fragen.getAntwortsatz());
                 bWeiter.setText("Naechste Frage");
                 zahl = 0;
-            }else if (zahl == 2){
+                }else if (zahl == 2){
                 bWeiter.setText("Quiz Beenden");
+                lQundA.setText("Die richtige Antwort ist " + Fragen.getAntwortsatz());
+
                 bWeiter.setStyle("-fx-background-color: yellow");
                 bWeiter.setTextFill(Color.BLACK);
 
@@ -76,9 +78,9 @@ public class WWMQuizController {
                 anzahlFrage = 1;
                 zahl = 0;
 
-            }else {
+                }else {
                 bWeiter.setStyle("-fx-background-color: RED");
-            }
+                }
 
             if(zaehler==29){
                 bWeiter.setText("Quiz Beenden");
