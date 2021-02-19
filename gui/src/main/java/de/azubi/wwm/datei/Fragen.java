@@ -373,7 +373,7 @@ public enum Fragen {
 
     F184(184, 4, "Wer hat keinen Stern auf dem Walk of Fame?", "Flipper", "Shrek", "Godzilla", "Lassie", "Die erste Person, welchen einen Stern auf dem Walk of Fame bekam, war Joanne Woodward."),
 
-    F185(185,1,"Gegen welches Land häten die USA während der Kubakrise fast einen Krieg gestartet?","Sowjetunion","Kuba","Mexiko","Brasilien","Die Kuba-Krise von 1962 markierte den Höhepunkt des Kalten Krieges. Auf Kuba hatte die Sowjetunion Raketen stationiert, die unmittelbar auf die USA gerichtet waren"),
+    F185(185,1,"Gegen welches Land hätten die USA während der Kubakrise fast einen Krieg gestartet?","Sowjetunion","Kuba","Mexiko","Brasilien","Die Kuba-Krise von 1962 markierte den Höhepunkt des Kalten Krieges. Auf Kuba hatte die Sowjetunion Raketen stationiert, die unmittelbar auf die USA gerichtet waren"),
 
     F186(186, 3, "Wie heißt der tiefste Punkt der Erde, welcher nicht unterseeisch ist?", "Bentleygraben", "Marianengraben", "Japangraben", "Marschallgraben", "Der Bentley Graben, auch Bentley-Subglazialgraben, ist eine durch Gletschereis vollständig überdeckte Senke in der Westantarktis."),
 

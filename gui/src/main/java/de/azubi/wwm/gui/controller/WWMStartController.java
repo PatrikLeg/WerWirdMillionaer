@@ -52,7 +52,7 @@ public class WWMStartController {
 
     @FXML
     public void starte(ActionEvent actionEvent) {
-
+        Fragen.zaehler = 1;
         Stage stage = (Stage) bStart.getScene().getWindow();
         Scene scene = createNextScene();
         stage.setScene(scene);
