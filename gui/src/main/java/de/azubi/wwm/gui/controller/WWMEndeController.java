@@ -66,7 +66,6 @@ public class WWMEndeController {
         }else if(WWMQuizController.anzahlFrage<=15){
             lMeldung.setText("Herzlichen Glückwunsch du bist jetzt Millionär");
         }
-
         lPunktzahl.setText(WWMQuizController.anzahlFrage + " / 15");
     }
     private Scene createQuizScene() {
