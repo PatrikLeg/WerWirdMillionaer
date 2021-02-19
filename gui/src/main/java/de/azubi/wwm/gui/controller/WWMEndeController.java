@@ -58,13 +58,13 @@ public class WWMEndeController {
     @FXML
     void initialize() {
         if(WWMQuizController.anzahlFrage<=5) {
-            lMeldung.setText("Schade vielleicht läufts beim nächsten mal besser");
+            lMeldung.setText("Schade vielleicht läufts beim Nächsten mal besser");
         }else if(WWMQuizController.anzahlFrage<=10){
             lMeldung.setText("Gut gemacht das lief schon ziemlich flott");
         }else if(WWMQuizController.anzahlFrage<=14){
-            lMeldung.setText("Super fast geschafft beim nächsten mal bekommst du die Millionen");
+            lMeldung.setText("Super fast geschafft beim Nächsten mal bekommst du die Millionen");
         }else if(WWMQuizController.anzahlFrage<=15){
-            lMeldung.setText("Herzlichen Glückwunsch du bist jetzt Millionär");
+            lMeldung.setText("Herzlichen Glückwunsch, du bist jetzt Millionär");
         }
         lPunktzahl.setText(WWMQuizController.anzahlFrage + " / 15");
     }
