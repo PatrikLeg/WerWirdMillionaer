@@ -68,10 +68,11 @@ public class WWMQuizController {
                 bWeiter.setText("Naechste Frage");
                 zahl = 0;
             }else if (zahl == 2){
-                Stage stage = (Stage) bWeiter.getScene().getWindow();
-                Scene scene = createEndScene();
-                stage.setScene(scene);
-                bWeiter.setStyle("-fx-background-color:  #559ACA");
+                bWeiter.setText("Quiz Beenden");
+                bWeiter.setStyle("-fx-background-color: yellow");
+                bWeiter.setTextFill(Color.BLACK);
+
+
                 anzahlFrage = 1;
                 zahl = 0;
 
@@ -119,17 +120,18 @@ public class WWMQuizController {
 
         }else if(bWeiter.getText().equals("Quiz Beenden")) {
             zaehler +=1;
-            if(zaehler==30){
+
 
                 Stage stage = (Stage) bWeiter.getScene().getWindow();
 
                 Scene scene = createEndScene();
                 stage.setScene(scene);
-            }
+
         }
     }
     @FXML
     void initialize() {
+        bWeiter.setStyle("-fx-background-color:  #559ACA");
         lAnzahlFrage.setText("Frage: " + anzahlFrage);
         lQundA.setText(Fragen.getZufallFrage().getfrage());
 
