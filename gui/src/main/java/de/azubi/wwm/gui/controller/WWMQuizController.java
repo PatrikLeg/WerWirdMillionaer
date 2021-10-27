@@ -163,8 +163,8 @@ public class WWMQuizController {
 
         Scene scene = createNextScene();
         stage.setScene(scene);
-
     }
+
     private Scene createNextScene() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/wWM/WWMStart.fxml"));
@@ -174,6 +174,7 @@ public class WWMQuizController {
         }
         return null;
     }
+
     private Scene createEndScene() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/wWM/WWMEnde.fxml"));
@@ -184,53 +185,22 @@ public class WWMQuizController {
         return null;
     }
 
-    public void waehleD(ActionEvent actionEvent) {
-        bAntwortD.setStyle("-fx-background-color: purple");
+
+
+    public void waehleAntwort(ActionEvent actionEvent) {
         bAntwortA.setStyle("-fx-background-color: #31539F");
-        bAntwortB.setStyle("-fx-background-color: #31539F");
-        bAntwortC.setStyle("-fx-background-color: #31539F");
-        if(Fragen.getRichtigeAntwort().equals(bAntwortD.getText())){
-            zahl = 1;
-        }else{
-            zahl = 2;
-        }
-
-        //bAntwortD.setFocusTraversable(true);
-    }
-
-    public void waehleA(ActionEvent actionEvent) {
-        bAntwortA.setStyle("-fx-background-color: purple");
         bAntwortC.setStyle("-fx-background-color: #31539F");
         bAntwortB.setStyle("-fx-background-color: #31539F");
         bAntwortD.setStyle("-fx-background-color: #31539F");
-        if(Fragen.getRichtigeAntwort().equals(bAntwortA.getText())){
-            zahl = 1;
-        }else{
-            zahl = 2;
-        }
-    }
-
-    public void waehleB(ActionEvent actionEvent) {
-        bAntwortB.setStyle("-fx-background-color: purple");
-        bAntwortA.setStyle("-fx-background-color: #31539F");
-        bAntwortC.setStyle("-fx-background-color: #31539F");
-        bAntwortD.setStyle("-fx-background-color: #31539F");
-        if(Fragen.getRichtigeAntwort().equals(bAntwortB.getText())){
-            zahl = 1;
-        }else{
-            zahl = 2;
-        }
-    }
-
-    public void waehleC(ActionEvent actionEvent) {
-        bAntwortC.setStyle("-fx-background-color:   purple");
-        bAntwortA.setStyle("-fx-background-color: #31539F");
-        bAntwortB.setStyle("-fx-background-color: #31539F");
-        bAntwortD.setStyle("-fx-background-color: #31539F");
-        if(Fragen.getRichtigeAntwort().equals(bAntwortC.getText())){
-            zahl = 1;
-        }else{
-            zahl = 2;
+        if (actionEvent.getSource() instanceof Button) {
+            Button waehleAntwort = (Button) actionEvent.getSource();
+            waehleAntwort.setStyle("-fx-background-color: purple");
+            if (Fragen.getRichtigeAntwort().equals(waehleAntwort.getText())) {
+                zahl = 1;
+            } else {
+                zahl = 2;
+            }
         }
     }
 }
+

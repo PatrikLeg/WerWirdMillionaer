@@ -17,16 +17,6 @@ import java.io.IOException;
 public class WWMStartController {
 
     @FXML
-    private Label lUeberschrift;
-    @FXML
-    private RadioButton rbLeicht;
-    @FXML
-    private RadioButton rbMittel;
-    @FXML
-    private RadioButton rbSchwer;
-    @FXML
-    private RadioButton rbWWM;
-    @FXML
     private Button bStart;
     @FXML
     private Label lHighscore;
