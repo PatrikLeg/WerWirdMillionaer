@@ -86,9 +86,9 @@ public class WWMQuizController {
             }
 
         } else if (bWeiter.getText().equals("Naechste Frage")) {
-            anzahlFrage +=1;
+            anzahlFrage += 1;
             lAnzahlFrage.setText("Frage: " + anzahlFrage);
-            zaehler +=1;
+            zaehler += 1;
 
             bAntwortD.setStyle("-fx-background-color: #31539F");
             bAntwortA.setStyle("-fx-background-color: #31539F");
@@ -97,25 +97,18 @@ public class WWMQuizController {
             bWeiter.setText("Antwort Einloggen");
             lQundA.setText(Fragen.getZufallFrage().getfrage());
 
-            bAntwortA.setText(Fragen.getAntworten());
-            bAntwortB.setText(Fragen.getAntworten());
-            bAntwortC.setText(Fragen.getAntworten());
-            bAntwortD.setText(Fragen.getAntworten());
+            do {
+                bAntwortA.setText(Fragen.getAntworten());
+                bAntwortB.setText(Fragen.getAntworten());
+                bAntwortC.setText(Fragen.getAntworten());
+                bAntwortD.setText(Fragen.getAntworten());
 
-            while(bAntwortD.getText().equals(bAntwortC.getText()) || bAntwortD.getText().equals(bAntwortB.getText()) || bAntwortD.getText().equals(bAntwortA.getText()) ||
+            } while (bAntwortD.getText().equals(bAntwortC.getText()) || bAntwortD.getText().equals(bAntwortB.getText()) || bAntwortD.getText().equals(bAntwortA.getText()) ||
                     bAntwortC.getText().equals(bAntwortA.getText()) || bAntwortC.getText().equals(bAntwortB.getText()) || bAntwortC.getText().equals(bAntwortD.getText()) ||
                     bAntwortB.getText().equals(bAntwortC.getText()) || bAntwortB.getText().equals(bAntwortD.getText()) || bAntwortB.getText().equals(bAntwortA.getText()) ||
-                    bAntwortA.getText().equals(bAntwortC.getText()) || bAntwortA.getText().equals(bAntwortB.getText()) || bAntwortA.getText().equals(bAntwortD.getText())) {
-                if (bAntwortB.getText().equals(bAntwortA.getText())) {
-                    bAntwortB.setText(Fragen.getAntworten());
-                }
-                if (bAntwortC.getText().equals(bAntwortB.getText()) || bAntwortC.getText().equals(bAntwortA.getText())) {
-                    bAntwortC.setText(Fragen.getAntworten());
-                }
-                if (bAntwortD.getText().equals(bAntwortC.getText()) || bAntwortD.getText().equals(bAntwortB.getText()) || bAntwortD.getText().equals(bAntwortA.getText())) {
-                    bAntwortD.setText(Fragen.getAntworten());
-                }
-            }
+                    bAntwortA.getText().equals(bAntwortC.getText()) || bAntwortA.getText().equals(bAntwortB.getText()) || bAntwortA.getText().equals(bAntwortD.getText()));
+
+
 
         }else if(bWeiter.getText().equals("Quiz Beenden")) {
             zaehler +=1;
@@ -128,31 +121,25 @@ public class WWMQuizController {
 
         }
     }
+
     @FXML
     void initialize() {
         bWeiter.setStyle("-fx-background-color:  #559ACA");
         lAnzahlFrage.setText("Frage: " + anzahlFrage);
         lQundA.setText(Fragen.getZufallFrage().getfrage());
 
-        bAntwortA.setText(Fragen.getAntworten());
-        bAntwortB.setText(Fragen.getAntworten());
-        bAntwortC.setText(Fragen.getAntworten());
-        bAntwortD.setText(Fragen.getAntworten());
+        do {
+            bAntwortA.setText(Fragen.getAntworten());
+            bAntwortB.setText(Fragen.getAntworten());
+            bAntwortC.setText(Fragen.getAntworten());
+            bAntwortD.setText(Fragen.getAntworten());
 
-        while(bAntwortD.getText().equals(bAntwortC.getText()) || bAntwortD.getText().equals(bAntwortB.getText()) || bAntwortD.getText().equals(bAntwortA.getText()) ||
+        }while(bAntwortD.getText().equals(bAntwortC.getText()) || bAntwortD.getText().equals(bAntwortB.getText()) || bAntwortD.getText().equals(bAntwortA.getText()) ||
                 bAntwortC.getText().equals(bAntwortA.getText()) || bAntwortC.getText().equals(bAntwortB.getText()) || bAntwortC.getText().equals(bAntwortD.getText()) ||
                 bAntwortB.getText().equals(bAntwortC.getText()) || bAntwortB.getText().equals(bAntwortD.getText()) || bAntwortB.getText().equals(bAntwortA.getText()) ||
-                bAntwortA.getText().equals(bAntwortC.getText()) || bAntwortA.getText().equals(bAntwortB.getText()) || bAntwortA.getText().equals(bAntwortD.getText())) {
-            if (bAntwortB.getText().equals(bAntwortA.getText())) {
-                bAntwortB.setText(Fragen.getAntworten());
-            }
-            if (bAntwortC.getText().equals(bAntwortB.getText()) || bAntwortC.getText().equals(bAntwortA.getText())) {
-                bAntwortC.setText(Fragen.getAntworten());
-            }
-            if (bAntwortD.getText().equals(bAntwortC.getText()) || bAntwortD.getText().equals(bAntwortB.getText()) || bAntwortD.getText().equals(bAntwortA.getText())) {
-                bAntwortD.setText(Fragen.getAntworten());
-            }
-        }
+                bAntwortA.getText().equals(bAntwortC.getText()) || bAntwortA.getText().equals(bAntwortB.getText()) || bAntwortA.getText().equals(bAntwortD.getText()));
+
+
     }
 
     @FXML
