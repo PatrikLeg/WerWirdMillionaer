@@ -1,0 +1,22 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+
+
+
+
+
+User ---> (Los Gehts)
+(Antwort auswählen).>(Antwort Einloggen) :extends
+User -->(Antwort Einloggen)
+(Schwierigkeit).>(Los Gehts) :includes
+User --> (Quiz Beenden)
+
+
+
+
+
+
+
+
+@enduml
